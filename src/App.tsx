@@ -189,15 +189,7 @@ function RobotSmallSVG({ size = 56 }: { size?: number }) {
   )
 }
 
-function ShieldCheckSVG({ size = 48 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 48 48" fill="none" aria-hidden="true">
-      <path d="M24 4L40 10V24C40 33 33 41 24 44C15 41 8 33 8 24V10Z" fill="#2DD4A0" opacity="0.2"/>
-      <path d="M24 4L40 10V24C40 33 33 41 24 44C15 41 8 33 8 24V10Z" stroke="#2DD4A0" strokeWidth="2.5" fill="none"/>
-      <path d="M16 24L22 30L32 18" stroke="#2DD4A0" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  )
-}
+
 
 function DiamondSVG({ size = 32, color = '#3B9EFF' }: { size?: number; color?: string }) {
   return (
