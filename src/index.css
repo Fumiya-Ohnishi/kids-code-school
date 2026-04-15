@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'M PLUS Rounded 1c', 'Nunito', sans-serif; background: #F0F9FF; }
+a { text-decoration: none; color: inherit; }
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.show { opacity: 1; transform: none; }
+.reveal-left { opacity: 0; transform: translateX(-28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal-left.show { opacity: 1; transform: none; }
+
+/* Squircle card */
+.squircle { border-radius: 28px; }
+
+/* FAQ */
+.faq-body { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.4s ease, opacity 0.3s ease; }
+.faq-body.open { max-height: 240px; opacity: 1; }
+
+/* Cursor blink */
+.cursor::after { content: '|'; animation: blink 1s step-end infinite; }
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
